@@ -10,7 +10,8 @@ terraform {
     bucket = "argocd-tfstate-bucket"
     key    = "terraform.tfstate"
     region = "ap-south-1"
-    profile = "keys"
+    access_key = "AKIA3FLDZJPVBLFLB3FL"
+    secret_key = "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"
   }
 
   required_version = ">= 1.6.3"
