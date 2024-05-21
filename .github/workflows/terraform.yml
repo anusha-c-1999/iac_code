@@ -1,14 +1,14 @@
-name: Cloudcore IAC
+name: anusha-c-1999
 
 on:
     push:
       branches: 
-        - master
+        - main
       paths: 
         - terraform/**
     pull_request:
       branches: 
-        - master
+        - main
       paths: 
         - terraform/**
 env:
@@ -17,7 +17,7 @@ env:
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     # S3 bucket for the terraform state. 
     BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE }}
-    AWS_REGION: us-east-1
+    AWS_REGION: ap-south-1
 
 jobs:
     terraform:
